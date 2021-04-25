@@ -1,0 +1,38 @@
+.room_box{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 42px 20px;
+    border: 1px solid #ccc;
+}
+
+.box_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_content{
+    min-height: 50vh;
+    max-height: 50vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.box_content::-webkit-scrollbar {
+    width: 5px;
+}
+
+@media (max-width:768px) {
+    .room_box{
+        width: 500px;
+        margin: auto;
+    }
+}
+
+@media (max-width:400px) {
+    .room_box{
+        width: 90vw;
+    }
+}
